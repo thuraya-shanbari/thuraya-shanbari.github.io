@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    color: #00bfff;
+    text-transform: none;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.navbarlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navbarlinks li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbarlinks a{
+    color: #00bfff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.navbarlinks a:hover{
+    background-color: black;
+    color: #ff8c00;
+    font-size: 25px;
+}
+
+.navbarlinks a.current{
+    color: #ff8c00;
+}
+
+.logos .iamazepart{
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    height: 15vh;
+    z-index: -1;
+}
+
+.logos .epipart{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    height: 20vh;
+    z-index: -1;
+}
+
+main{
+    font-family: 'Teko', sans-serif;
+}
+
+.welcome{
+    text-align: center;
+    font-size: 30px;
+    color: #ff8c00;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+}
+
+.intro{
+    align-items: center;
+    flex: 1;
+}
+
+.introtext{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.introtext p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.teamwelcome{
+    text-align: center;
+    font-size: 30px;
+    color: #ff8c00;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+}
+
+.teamintro{
+    align-items: center;
+    flex: 1;
+    width: 50%;
+}
+
+.teamintrotext{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.teamintrotext p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.grouppic img{
+    position: absolute;
+    height: 95vh;
+    bottom: 0%;
+    left: 50%;
+    padding: 150px 10px 100px 90px;
+    animation: drop 1.5s ease;
+    position: fixed;
+}
+
+@keyframes drop{
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.latexwelcome{
+    text-align: center;
+    font-size: 30px;
+    color: #ff8c00;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+}
+
+.latexintro{
+    align-items: center;
+    flex: 1;
+}
+
+.latexintrotext{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.latexlinks{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff8c00;
+}
+
+.latexintrotext p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dwnldwelcome{
+    text-align: center;
+    font-size: 50px;
+    color: #ff8c00;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+}
+
+.dwnldintro{
+    align-items: center;
+    flex: 1;
+}
+
+.dwnldbutton{
+    outline: none;
+    font-family: 'Teko', sans-serif;
+    height: 10vh;
+    width: 30vh;
+    font-size: 40px;
+    text-align: center;
+    background: transparent;
+    border: #00bfff;
+    border-style: solid;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+}
+
+.dwnldbutton:active{
+    background: #00bfff;
+    -webkit-box-shadow: inset 0px 0px 15px #034961;
+       -moz-box-shadow: inset 0px 0px 15px #034961;
+            box-shadow: inset 0px 0px 15px #034961;
+     outline: none;
+     border-color: black;
+}
+
+.dwnldbutton:hover{
+    background: #00bfff;
+}
